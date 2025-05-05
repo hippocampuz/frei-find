@@ -56,3 +56,31 @@ export interface SearchQuery {
   employees?: [number | null, number | null];
   foundedYear?: [number | null, number | null];
 }
+
+export type TriggerType = 
+  | 'newCompany'
+  | 'financialChange'
+  | 'ownershipChange'
+  | 'newRoles'
+  | 'leadershipChange'
+  | 'addressChange'
+  | 'websiteChange'
+  | 'newTenders'
+  | 'creditScoreChange'
+  | 'bankruptcyRisk';
+
+export interface AlertTrigger {
+  id: string;
+  name: string;
+  type: TriggerType;
+  listId: string;
+  enabled: boolean;
+  createdAt: Date;
+  lastTriggered?: Date;
+  configuration: {
+    threshold?: number;
+    notifyVia: ('email' | 'hubspot' | 'slack')[];
+    frequency: 'immediately' | 'daily' | 'weekly';
+    conditions?: Record<string, any>;
+  };
+}

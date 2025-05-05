@@ -38,7 +38,6 @@ const ExportModal = ({
       toast({
         title: "Eksport fullført",
         description: `${companyCount} selskaper er nå tilgjengelige i din HubSpot-konto.`,
-        variant: "success",
       });
       
       onClose();
@@ -55,7 +54,6 @@ const ExportModal = ({
       toast({
         title: "Nedlasting fullført",
         description: "CSV-filen er klar til bruk.",
-        variant: "success",
       });
     }, 1000);
   };

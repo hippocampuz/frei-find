@@ -64,11 +64,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				frei: {
-					blue: '#0B3954',
-					teal: '#087E8B',
-					light: '#F0F6F6',
-					accent: '#FF5A5F',
-					gray: '#5B6C7B'
+					blue: '#0B3954',      // Mørkere blå - primærfarge
+					teal: '#087E8B',      // Teal - sekundærfarge
+					light: '#F0F6F6',     // Lys bakgrunnsfarge
+					accent: '#FF5A5F',    // Rød aksentfarge
+					gray: '#5B6C7B',      // Grå for tekst
+					darkBlue: '#09324A',  // Mørkere blå for hover
+					lightTeal: '#A9D6E5'  // Lysere teal for bakgrunner
 				}
 			},
 			borderRadius: {

@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Search, ListChecks, User } from "lucide-react";
+import { Search, ListChecks, BellRing, User } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -27,6 +27,10 @@ const Navbar = () => {
             <Link to="/lists" className="flex items-center gap-1.5 text-sm font-medium hover:text-frei-teal transition-colors">
               <ListChecks size={18} />
               <span>Mine lister</span>
+            </Link>
+            <Link to="/alerts" className="flex items-center gap-1.5 text-sm font-medium hover:text-frei-teal transition-colors">
+              <BellRing size={18} />
+              <span>Varsler</span>
             </Link>
           </nav>
           

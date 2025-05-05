@@ -126,7 +126,6 @@ const Index = () => {
     toast({
       title: "Liste opprettet",
       description: `Listen "${name}" med ${selectedCompanyIds.length} bedrifter er lagret.`,
-      variant: "success",
     });
     
     // Show export modal for the newly created list
@@ -152,7 +151,6 @@ const Index = () => {
         toast({
           title: "Bedrifter lagt til",
           description: `${addedCount} nye bedrifter er lagt til i "${list.name}".`,
-          variant: "success",
         });
         
         // Set current list for export modal
