@@ -12,9 +12,13 @@ const Navbar = () => {
             <span className="inline-block text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-frei-blue to-frei-teal">
               FIND
             </span>
-            <span className="hidden md:inline-block text-xs px-2 py-1 rounded-md bg-frei-light text-frei-teal font-medium">
-              fra Frei
-            </span>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/5d2ad6f3-2c84-4ef4-9845-75d171372e37.png" 
+                alt="fra Frei" 
+                className="hidden md:block h-6" 
+              />
+            </div>
           </Link>
         </div>
         
